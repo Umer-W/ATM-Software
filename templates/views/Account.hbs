@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>HOME Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background: url("/images/ATM-image8.jpg") no-repeat center center fixed;
+            background-size: cover;
+            background-size: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+
+            flex-wrap: wrap;
+
+            margin-top: 0%;
+            margin-bottom: 5%;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.884);
+        }
+
+        .image {
+            width: 40%;
+
+        }
+
+        .para {
+            width: 40%;
+        }
+
+        main .image img {
+            width: 70%;
+            border-radius: 5px;
+            margin-left: 90px;
+        }
+
+        .success {
+            font-size: 20px;
+            font-weight: 700;
+            color: green;
+            display: inline-block;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            background-color: rgba(255, 255, 255, 0.699);
+            padding: 2%;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+
+
+        }
+
+        .infoTable {
+            background-color: rgba(255, 255, 255, 0.856);
+            text-align: start;
+            border: 1px solid black;
+            padding: 1%;
+            font-weight: 700;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 600px;
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            margin-right: 440px;
+            padding-left: 8%;
+            margin-left: 440px;
+
+        }
+
+        table td {
+            padding-right: 70px;
+
+        }
+
+
+
+        .depositForm {
+            background-color: rgba(255, 255, 255, 0.699);
+
+            padding: 2%;
+            border: 1px solid black;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            width: 20%;
+            margin: 50px;
+        }
+
+        .depositForm input {
+            padding: 4%;
+            font-size: larger;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: 2%;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            width: 80%;
+
+        }
+
+        .depositForm .btn {
+            background-color: rgb(248, 248, 248);
+            color: black;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+         {{!-- ================================================================================================================================
+    ============================================================  Media screen 800 ox  =============================================
+    ================================================================================================================================ --}}
+         @media only screen and (max-width: 800px){
+   body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background: url("/images/ATM-image8.jpg") no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+
+            flex-wrap: wrap;
+
+            margin-top: 0%;
+            margin-bottom: 5%;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.884);
+        }
+
+        .image {
+            width: 40%;
+
+        }
+
+        .para {
+            width: 40%;
+        }
+
+        main .image img {
+            width: 70%;
+            border-radius: 5px;
+            margin-left: 90px;
+        }
+
+        .success {
+            font-size: 20px;
+            font-weight: 700;
+            color: green;
+            display: inline-block;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            background-color: rgba(255, 255, 255, 0.699);
+            padding: 2%;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+
+
+        }
+
+        .infoTable {
+            background-color: rgba(255, 255, 255, 0.856);
+            text-align: start;
+            border: 1px solid black;
+            padding: 1%;
+            font-weight: 700;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 90%;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            margin-right: 5%;
+            padding-left: 8%;
+            margin-left: 5%;
+
+        }
+
+        table td {
+            padding-right: 10px;
+
+        }
+
+
+
+        .depositForm {
+            background-color: rgba(255, 255, 255, 0.699);
+
+            padding: 2%;
+            border: 1px solid black;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            width: 90%;
+            margin: 10px;
+        }
+
+        .depositForm input {
+            padding: 4%;
+            font-size: larger;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: 2%;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            width: 80%;
+
+        }
+
+        .depositForm .btn {
+            background-color: rgb(248, 248, 248);
+            color: black;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+         }
+         {{!-- ================================================================================================================================
+    ============================================================  Media screen 800 ox  =============================================
+    ================================================================================================================================ --}}
+         @media only screen and (max-width: 320px){
+   body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background: url("/images/ATM-image8.jpg") no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+
+            flex-wrap: wrap;
+
+            margin-top: 0%;
+            margin-bottom: 5%;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.884);
+        }
+
+        .image {
+            width: 40%;
+
+        }
+
+        .para {
+            width: 40%;
+        }
+
+        main .image img {
+            width: 70%;
+            border-radius: 5px;
+            margin-left: 90px;
+        }
+
+        .success {
+            font-size: 20px;
+            font-weight: 700;
+            color: green;
+            display: inline-block;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            background-color: rgba(255, 255, 255, 0.699);
+            padding: 2%;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+
+
+        }
+
+        .infoTable {
+            background-color: rgba(255, 255, 255, 0.856);
+            text-align: start;
+            border: 1px solid black;
+            padding: 1%;
+            font-weight: 700;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 90%;
+            color: rgb(0, 0, 0);
+            font-size: 13px;
+            margin-right: 5%;
+            padding-left: 8%;
+            margin-left: 5%;
+
+        }
+
+        table td {
+            padding-right: 5px;
+
+        }
+
+
+
+        .depositForm {
+            background-color: rgba(255, 255, 255, 0.699);
+
+            padding: 2%;
+            border: 1px solid black;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            width: 90%;
+            margin: 10px;
+        }
+
+        .depositForm input {
+            padding: 4%;
+            font-size: larger;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: 2%;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            width: 80%;
+
+        }
+
+        .depositForm .btn {
+            background-color: rgb(248, 248, 248);
+            color: black;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+         }
+    </style>
+</head>
+
+<body>
+    {{>header}}
+    <p class="success">You are logged in successfully</p>
+    <main>
+        <div class="infoTable">
+            <h2 >Assalam O Alaikum {{naaam}}</h2>
+            <table>
+
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        {{name}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        {{email}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone No:
+                    </td>
+                    <td>
+                        {{phone}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        {{password}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Balance:
+                    </td>
+                    <td>
+                        {{balance}} Rs.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="depositForm">
+            <form action="Deposit" method="post">
+                <h2>Deposit Money</h2>
+                <input type="number" placeholder="Enter Amount" name="money"> <br>
+                <input type="number" placeholder="Enter Your Account Number" name="accountNumber"> <br>
+                <input class="btn" type="submit" value="Deposit money">
+
+            </form>
+        </div>
+
+        <div class="depositForm">
+            <form action="/Transfer" method="post">
+                <h2>Transfer Money</h2>
+                <input type="number" placeholder="Enter Amount" name="money"> <br>
+                <input type="number" placeholder="Enter Your Account Number" name="accountNumber"> <br>
+                <input type="number" placeholder="Enter Recipient Account Number" name="recipientNumber"> <br>
+                <input class="btn" type="submit" value="Transfer money">
+
+            </form>
+        </div>
+        <div class="depositForm">
+            <form action="Withdraw" method="post">
+                <h2>Withdraw Money</h2>
+                <input type="number" placeholder="Enter Amount" name="money"> <br>
+                <input type="number" placeholder="Enter Account Number" name="accountNumber"> <br>
+                <input class="btn" type="submit" value="Withdraw money">
+
+            </form>
+        </div>
+    </main>
+    {{>footer}}
+</body>
+
+</html>

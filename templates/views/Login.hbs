@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRAION PAGE</title>
+    <style>
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background: url("/images/ATM-image4.jpg") no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+
+        }
+        form{
+            border: 1px solid rgba(0, 0, 0, 0.562);
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: 4% 33% 3% 33%;
+            background-color: rgba(240, 248, 255, 0.76);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .inputs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            
+        }
+        .inputs input{
+            padding: 3%;
+            font-size: larger;
+            border: none;
+            margin: 5%;
+            width: 80%;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.856);
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+        .h{
+            font-size: 40px;
+            text-align: center;
+        }
+        .formbtn{
+            padding: 3%;
+            font-size: larger;
+            width: 50%;
+            border-radius: 10px;
+            border: none;
+            color: rgba(255, 255, 255, 0.877);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: rgba(15, 15, 15, 0.842);
+            font-weight: 600;
+            margin-top: 3%;
+            margin-bottom: 7%;
+          
+        }
+        .formbtn:hover{
+            background-color: rgba(54, 54, 54, 0.822);
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+        
+
+
+         @media only screen and (max-width: 800px) {
+            
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background: url("/images/ATM-image4.jpg") no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+
+        }
+        form{
+            border: 1px solid rgba(0, 0, 0, 0.562);
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin: 4% 3% 3% 3%;
+            background-color: rgba(240, 248, 255, 0.76);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .inputs{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            
+        }
+        .inputs input{
+            padding: 3%;
+            font-size: larger;
+            border: none;
+            margin: 5%;
+            width: 80%;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.856);
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+        .h{
+            font-size: 40px;
+            text-align: center;
+        }
+        .formbtn{
+            padding: 3%;
+            font-size: larger;
+            width: 50%;
+            border-radius: 10px;
+            border: none;
+            color: rgba(255, 255, 255, 0.877);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: rgba(15, 15, 15, 0.842);
+            font-weight: 600;
+            margin-top: 3%;
+            margin-bottom: 7%;
+          
+        }
+        .formbtn:hover{
+            background-color: rgba(54, 54, 54, 0.822);
+            transform: scale(1.03);
+            transition: 0.3s;
+        }
+        
+
+         }
+    </style>
+    
+</head>
+<body>
+    {{>header}}
+    <form action="Account" method="post">
+        <h2 style="color: green;">{{note}}</h2>
+       
+        <h1 class="h">LOGIN FORM</h1>
+        <div class="inputs">
+            
+            <input type="email" placeholder="Enter Email" name="email">
+           
+            
+            <input type="number" placeholder="Enter Account number" name="accountnumber">
+           
+        </div>
+        <input type="submit" value="Log in" class="formbtn">
+         <h2 style="color: rgb(218, 11, 11);">{{notee}}</h2>
+    </form>
+    <div class="image">
+
+    </div>
+    {{>footer}}
+</body>
+</html>
